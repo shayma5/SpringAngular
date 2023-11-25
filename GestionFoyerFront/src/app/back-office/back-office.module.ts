@@ -3,6 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { BackOfficeRoutingModule } from './back-office-routing.module';
 import { BackOfficeComponent } from './back-office.component';
+import { HomeBackComponent } from './home-back/home-back.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { NavComponent } from './nav/nav.component';
+import { BlocModule } from './bloc/bloc.module';
+
 
 
 
@@ -10,11 +15,14 @@ import { BackOfficeComponent } from './back-office.component';
   declarations: [
     
   
-    BackOfficeComponent
-  ],
+    BackOfficeComponent,
+            HomeBackComponent,
+            SidebarComponent,
+            NavComponent  ],
   imports: [
     CommonModule,
-    BackOfficeRoutingModule
+    BackOfficeRoutingModule,
+    BlocModule
   ]
 })
 export class BackOfficeModule { }

@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { UserRoutingModule } from './user-routing.module';
-import { SignInComponent } from './sign-in/sign-in.component';
+import { UserComponent } from './user.component';
 
 
 @NgModule({
   declarations: [
-    SignInComponent
+    UserComponent
   ],
   imports: [
     CommonModule,

@@ -7,8 +7,6 @@ import { FrontOfficeComponent } from './front-office.component';
 import { HeaderComponent } from './header/header.component';
 import { SlideComponent } from './slide/slide.component';
 import { FooterComponent } from './footer/footer.component';
-import { NotFoundComponent } from './not-found/not-found.component';
-import { UserModule } from './user/user.module';
 import { BackOfficeRoutingModule } from '../back-office/back-office-routing.module';
 
 
@@ -17,15 +15,12 @@ import { BackOfficeRoutingModule } from '../back-office/back-office-routing.modu
     FrontOfficeComponent,
     HeaderComponent,
     SlideComponent,
-    FooterComponent,
-    NotFoundComponent 
-  ],
+    FooterComponent  ],
   imports: [
     CommonModule,
     FrontOfficeRoutingModule,
     BackOfficeRoutingModule,
-    UniversityModule,
-    UserModule
+    UniversityModule
   ]
 })
 export class FrontOfficeModule { }
