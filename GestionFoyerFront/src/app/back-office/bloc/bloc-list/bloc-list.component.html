@@ -1,61 +1,29 @@
-<main>
-    <div class="container-fluid px-4 py-5">
-        <h1 class="mt-4">Blocs</h1>
-        <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">List des bloc</li>
-        </ol>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="main-box clearfix">
-                    <div class="table-responsive">
-                        <table class="table user-list">
-                            <thead>
-                                <tr>
-                                    <th class="text-center"><span>User</span></th>
-                                    <th class="text-center"><span>Created</span></th>
-                                    <th class="text-center"><span>Status</span></th>
-                                    <th class="text-center"><span>Email</span></th>
-                                    <th class="text-center"><span>Actions</span></th>
-                                </tr>
-                            </thead>
-                            <tbody >
-                                <tr >
-                                    <td>
-                                        <img src="" alt="">
-                                        <a href="#" class="user-link"></a>
-                                        <span class="user-subhead"></span>
-                                    </td>
-                                    <td>
-                                        
-                                    </td>
-                                    <td class="text-center">
-                                        <span class="label label-default"></span>
-                                    </td>
-                                    <td>
-                                        
-                                    </td>
-                                    <td style="width: 10%;">
-                                        <div class="text-center">
-                                            <a class="fas fa-pencil-square-o m-2" routerLink="/back/bloc/editbloc"></a>
-                                            <a class="fas fa-trash m-2" href="#" ></a>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <ul class="pagination pull-right">
-                        <li><a href="#"><i class="fa fa-chevron-left"></i></a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#"><i class="fa fa-chevron-right"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</main>
+<div class="px-4 pt-4 py-5" style="margin-top: 50px; margin-left: 30px; ">
+<div class="shadow-lg rounded-lg overflow-hidden mx-4 md:mx-10">
+  <table class="w-full">
+      <thead>
+          <tr class="bg-gray-100">
+              <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Name</th>
+              <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Email</th>
+              <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Phone</th>
+              <th class="w-1/4 py-4 px-6 text-left text-gray-600 font-bold uppercase">Action</th>
+          </tr>
+      </thead>
+      <tbody class="bg-white">
+          <tr>
+              <td class="py-4 px-6 border-b border-gray-200">John Doe</td>
+              <td class="py-4 px-6 border-b border-gray-200 truncate">johndoe@gmail.com</td>
+              <td class="py-4 px-6 border-b border-gray-200">555-555-5555</td>
+              <td class="py-4 px-6 border-b border-gray-200">
+                  <button routerLink="/back/bloc/editbloc" class="bg-green-500 text-white py-1 px-2 rounded-full text-xs ">update</button>
+                  <button class="bg-red-500 text-white py-1 px-2 rounded-full text-xs ml-1">delete</button>
+
+              </td>
+          </tr>
+
+
+          <!-- Add more rows here -->
+      </tbody>
+  </table>
+</div>
+</div>

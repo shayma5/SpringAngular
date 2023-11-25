@@ -245,7 +245,7 @@ sup {
 }
 
 a {
-  color: #fd7e14;
+  color: var(--bs-link-color);
   text-decoration: underline;
 }
 a:hover {
