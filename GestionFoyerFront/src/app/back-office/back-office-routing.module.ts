@@ -9,8 +9,10 @@ const routes: Routes = [
     children: [
       {path:"bloc",loadChildren:()=>
         import('./bloc/bloc.module').then(m=>m.BlocModule)},
+      {path:"reservation",loadChildren:()=>
+        import('./reservation/reservation.module').then(m=>m.ReservationModule)},
       {path:"dashboard", component:HomeBackComponent}
-      
+
 ]}];
 
 @NgModule({
