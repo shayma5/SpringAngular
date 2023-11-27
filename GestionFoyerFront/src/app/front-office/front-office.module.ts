@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { SlideComponent } from './slide/slide.component';
 import { FooterComponent } from './footer/footer.component';
 import { BackOfficeRoutingModule } from '../back-office/back-office-routing.module';
+import { ReservationComponent } from './reservation/reservation.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { BackOfficeRoutingModule } from '../back-office/back-office-routing.modu
     FrontOfficeComponent,
     HeaderComponent,
     SlideComponent,
-    FooterComponent  ],
+    FooterComponent,
+    ReservationComponent  ],
   imports: [
     CommonModule,
     FrontOfficeRoutingModule,

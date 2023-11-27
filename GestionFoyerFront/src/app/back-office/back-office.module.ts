@@ -13,12 +13,13 @@ import { BlocModule } from './bloc/bloc.module';
 
 @NgModule({
   declarations: [
-    
-  
+
+
     BackOfficeComponent,
             HomeBackComponent,
             SidebarComponent,
-            NavComponent  ],
+            NavComponent,
+         ],
   imports: [
     CommonModule,
     BackOfficeRoutingModule,
